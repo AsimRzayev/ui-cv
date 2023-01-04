@@ -2,13 +2,14 @@ export const UserData={
     firstName:"Serxan",
     lastName:"Rasullu",
     interests:["Software Engineer","Open Source Enthusiast","PHP","Laravel","JavaScript","React","Node.js"],
-    imageUrl:"https://test.png",
+    imageUrl:"http://work.az/_Files/ProfileImages/200/21.jpg",
     cvUrl:"https://test.pdf",
     place:"Azerbaijan",
     company:"Allaha Umud",
     github:"AsimRza",
     linkedin:"test.com",
-    email:"test@gmail.com"
+    email:"test@gmail.com",
+    medium:"https://medium.com/@asimrzayev"
 }
 
 export const TechData=["PHP",
@@ -31,13 +32,13 @@ export const TechData=["PHP",
             startDate:"2022-10-28",
             endDate:null,
             position:"Full stack developer",
-            companyName:"BNA"
+            company:"BNA"
         },
         {
             startDate:"2022-06-28",
             endDate:"2022-10-28",
             position:"Dentist",
-            companyName:"Azer Ishiq"
+            company:"Azer Ishiq"
         }
     ]
 

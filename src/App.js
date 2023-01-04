@@ -10,9 +10,9 @@ import { ROUTES } from './routes';
 
 function App() {
   return (
-    <Flex  w="95%" mx="auto" mt={4} columnGap={4} >
+    <Flex  w="95%" mx="auto" mt={4} columnGap={6} >
       <MainLayout/>
-      <Box w="70%" bg="blue" color="white"> 
+      <Box w="68%" bg="blue" color="white"> 
           <Routes>
          
             <Route path="" element={<Navigate to={ROUTES.home}/>} />

@@ -9,14 +9,20 @@ UserRouter.get("",function(req,res){
    }, 2000); 
 })
 
-UserRouter.get("/user/tech",function(req,res){
-   res.send(TechData)
+UserRouter.get("/tech",function(req,res){
+  setTimeout(() => {
+    res.send(TechData)
+   }, 2000); 
  })
 
- UserRouter.get("/user/experience",function(req,res){
-   res.send(Experience)
+ UserRouter.get("/experience",function(req,res){
+  setTimeout(() => {
+    res.send(Experience)
+   }, 2000); 
  })
 
- UserRouter.get("/user/education",function(req,res){
-   res.send(Education)
+ UserRouter.get("/education",function(req,res){
+  setTimeout(() => {
+    res.send(Education)
+   }, 2000); 
  })
