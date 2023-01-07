@@ -17,7 +17,7 @@ export default function MainLayout() {
   const {isLoading,data:user}=useQuery(["getProfile"],getProfile)
 
   return (
-    <Stack spacing={4} w="32%" >
+    <Stack spacing={4}  w="32%" >
         <Navbar/>
         <CardBackground >
         {isLoading?<Loading/>:  <Profile isLoading={isLoading} user={user}/>}

@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 const app=express();
 
 const corsOptions={
-    origin:"http://localhost:3000",
+    origin:["http://localhost:3000","http://localhost:3001"],
     methods:["GET","POST","PUT"]
 }
 

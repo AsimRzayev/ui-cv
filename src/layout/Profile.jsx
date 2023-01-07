@@ -9,7 +9,7 @@ const Profile = ({user,isLoading}) => {
     return <Loading/>
  }
   return (
-    <Stack w="full" textAlign="center" alignItems="center" spacing={6}> 
+    <Stack w="full"  textAlign="center" alignItems="center" spacing={6}> 
      <Avatar size='2xl' name='Segun Adebayo' src={user.imageUrl} bg="purple" outline="2px solid purple" outlineOffset={2} />
      <Heading as="h2"  color="gray.600" fontSize="xl">{user.firstName}&nbsp;{user.lastName}</Heading>
     <Text color="gray.500">⚡ {user.interests.map((interest,idx)=>{
