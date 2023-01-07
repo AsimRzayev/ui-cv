@@ -17,21 +17,16 @@ const RecentProject = () => {
   }
   
 
-//   console.log(repos.sort(function (a, b) {
-//     var key1 = new Date(a.created_at).getTime();
-//     var key2 = new Date(b.created_a).getTime();
+  let recentPosts=repos.sort(function(a, b) { 
+    a = new Date(a.created_at);
+    b = new Date(b.created_at);
+    return a >b ? -1 : a < b ? 1 : 0;
+   })
 
-//     if (key1 < key2) {
-//         return -1;
-//     } else if (key1 === key2) {
-//         return 0;
-//     } else {
-//         return 1;
-//     }
-// }),"test")
+   
   return (
     <Grid templateColumns='repeat(2, 1fr)' gap={4}>
-        {repos.reverse().slice(0,2).map(repo=> <GithubItem repo={repo} />)}
+        {recentPosts.slice(0,2).map(repo=> <GithubItem repo={repo} />)}
     </Grid>
   )
 }

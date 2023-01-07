@@ -11,7 +11,6 @@ const Github = () => {
   
   const {data:repos,isLoading} =useQuery(["getRepos"],getRepos)
 
-  console.log(repos)
   if(isLoading){
      return <Loading/>
   }
